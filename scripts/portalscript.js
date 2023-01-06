@@ -1,3 +1,8 @@
-const year = document.querySelector('#year');
+const footyear = document.querySelector('#footyear');
+const footdate = document.querySelector('#footdate');
 
-year.textContent = new Date().getFullYear();
+footyear.textContent = new Date().getFullYear();
+
+const date = new Date().toLocaleDateString();
+const time = new Date().toLocaleTimeString();
+footdate.innerHTML = `Last Updated: ${date} ${time}`;
