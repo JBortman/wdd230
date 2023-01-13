@@ -1,0 +1,19 @@
+@media only screen and (min-width: 32.5em){
+    h1 {
+        padding: 10px;
+        align-items: center;
+        height: 100px;
+    }
+
+    img {
+        display: inline;
+        box-shadow: 0px 0px 10px dimgrey;
+    }
+    
+    footer {
+        letter-spacing: 2px;
+        margin: 0;
+        width: 400px;
+
+    }
+}
