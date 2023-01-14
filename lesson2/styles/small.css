@@ -1,0 +1,66 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: rgb(206, 206, 206);
+}
+
+header {
+    background-color:brown;
+    margin: 0 auto;
+    color:cornsilk;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+body {
+    font-family: 'Cuprum', sans-serif;
+}
+
+section {
+    border-radius: 1.5em;
+    background-color:rgb(255, 214, 214);
+    width: auto;
+    margin: 10px;
+    border: solid 1px rgb(185, 86, 86);
+}
+
+section a {
+    padding: .5em;
+}
+
+h3 {
+    background-color: rgb(185, 86, 86);
+    color:cornsilk;
+    margin: 0;
+    padding: .5em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+img {
+    max-width: 100%;
+    border-top: solid 1px rgb(185, 86, 86);
+    border-bottom: solid 1px rgb(185, 86, 86);
+}
+
+section p {
+    margin: .5em;
+}
+
+footer {
+    background-color:brown;
+    margin: 0 auto;
+    color:cornsilk;
+    font-size: .9em;
+    padding: 1em;
+}
