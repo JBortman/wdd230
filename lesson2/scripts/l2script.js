@@ -1,5 +1,5 @@
-const footyear = document.querySelector('#footyear');
-const footdate = document.querySelector('#footdate');
+const footyear = document.querySelector('#foot-year');
+const footdate = document.querySelector('#foot-date');
 
 footyear.textContent = new Date().getFullYear();
 
