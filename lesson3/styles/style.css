@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Raleway', Helvetica;
+    max-width: 540px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+}
+
+nav div {
+    flex: 1 1 auto;
+}
+
+#header {
+    background-color: #0a2233;
+    color: #F0ECD1;
+    font-size: 35px;
+}
+
+#navigation {
+    background-color: #8D7253;
+    color: #F0ECD1;
+    font-size: 30px;
+}
+
+#navigation :hover {
+    background-color: #779C4F;
+    color: #0a2233;
+}
+
+div h1 {
+    text-align: left;
+    color: #0a2233;
+}
+
+div h2 {
+    color: #0a2233;
+}
+
+div h3 {
+    color: #0a2233;
+}
+
+#paragraph {
+    background-color: #F0ECD1;
+    color:#0a2233;
+    font-weight: 500;
+    text-align: left;
+}
+
