@@ -8,40 +8,43 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">    <title>Pioche Chamber of Commerce | Design & Typography</title>
     <title>Pioche Chamber of Commerce | Home</title>
 </head>
 <body>
     <header>
         <img src="images/pcc-logo-s.jpg" alt="Pioche Chamber of Commerce Logo">
-        <p id="title">Pioche Chamber of Commerce</p>
-        <p>Current date</p>
+        <div class="title">
+            <p><b>Pioche Chamber of Commerce</b></p>
+            <p><span id="headDate"></span></p>
+        </div>
+    </header>
         <nav>
-            <ul class="navigation">
-                <li><a id="menu" href="#"></a></li>
+            <button id="hamBut">&#9776;</button>
+            <ul id="primaryNav">
                 <li><a href="#">Discover</a></li>
-                <li><a href="#">Direcotry</a></li>
+                <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
     <main>
         <div>Call to action</div>
         <div>Event</div>
         <div>Weather</div>
         <div>News Release</div>
-        <div class="spotlight">
-            <div>Spotlight 1</div>
-            <div>Spotlight 2</div>
+        <div id="spot-back">
+            <div class="spotlight1">Spotlight 1</div>
+            <div class="spotlight2">Spotlight 2</div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; Pioche Chamber</p>
-        <p>Jordan Bortman</p>
+        <p>&copy; <span id="footYear"></span> Pioche Chamber</p>
+        <p><b>Jordan Bortman</b></p>
         <p>WDD 230 Project</p>
-        <p>Last Modified:</p>
+        <p><span id="footDate"></span></p>
     </footer>
 <script src="scripts/chamber-script.js"></script> 
 </body>
