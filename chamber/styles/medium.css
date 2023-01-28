@@ -1,4 +1,36 @@
 @media only screen and (min-width: 35rem) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
+    #hero {
+        order: -1;
+        width: 100%;
+    }
 
+    #news {
+        order: -1;
+        width: 100%;
+    }
+
+    #spot-back {
+        order: -1;
+        width: 100%;
+    }
+    
+    #join {
+        order:-1;
+        display: flex;
+        width: 100%;
+    }
+
+    #event {
+        width: 46%;
+    }
+
+    #weather {
+        width: 46%;
+    }
 }
