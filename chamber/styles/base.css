@@ -38,13 +38,11 @@ header {
 }
 
 .title {
-    display: flex;
     border: none;
     background-color: transparent;
     font-size: 1.5rem;
     height: auto;
-    justify-items: center;
-    align-items: center;
+    text-align: center;
 }
 
 .socMed {
