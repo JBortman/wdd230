@@ -10,7 +10,6 @@ body {
 nav {
     display: flex;
     flex-direction: column;
-    text-align: center;
 }
 
 nav a {
@@ -18,7 +17,10 @@ nav a {
 }
 
 nav div {
+    display: flex;
     flex: 1 1 auto;
+    justify-content: center;
+
 }
 
 #header {
