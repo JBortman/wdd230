@@ -22,3 +22,11 @@ const date = new Date().toLocaleDateString();
 const time = new Date().toLocaleTimeString();
 footDate.innerHTML = `Last Updated: ${date} ${time}`;
 
+/* -----Get date for hidden message----- */
+const d = 2;
+if (d == 1 || d == 2){
+    document.getElementById('meeting').hidden = false;
+}
+else {
+    document.getElementById('meeting').hidden = true;
+};
