@@ -4,6 +4,10 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .title {
+        font-size: 1.8rem;
+    }
     
     #hero {
         order: -1;
