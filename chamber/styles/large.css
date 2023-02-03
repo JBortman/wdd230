@@ -55,26 +55,25 @@
     }
 
     #spotBack {
-        display: flex;
-        flex-direction: column;
+        display: grid;
         margin: 0px;
-        height: max-content;
+        height: 100%;
         order: -1;
         grid-row: 1/4;
         grid-column: 3/4;
     }
 
     div .spotSmall {
-        height: max-content;
+        height: auto;
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: auto;
     }
 
     div .spotLarge {
-        height: max-content;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -118,6 +117,10 @@
     #news {
         margin: 0px;
         grid-column: 2/3;
+    }
+
+    #news p {
+        padding: 5px;
     }
 
     footer {
