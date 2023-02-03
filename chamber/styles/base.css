@@ -140,6 +140,10 @@ main div h3 {
 
 }
 
+main div p {
+    padding: 5px;
+}
+
 #hero{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

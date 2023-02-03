@@ -119,10 +119,6 @@
         grid-column: 2/3;
     }
 
-    #news p {
-        padding: 5px;
-    }
-
     footer {
         margin-top: 10px;
         flex-direction: row;
