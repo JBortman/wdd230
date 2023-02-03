@@ -1,5 +1,5 @@
 @media only screen and (min-width: 50rem) {
-
+    
     nav {
         margin-bottom: 10px;
     }
@@ -21,9 +21,10 @@
     main {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 150px 150px 150px;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 10px;
         max-width: 1040px;
+        height: max-content;
         margin: 0 auto;
     }
 
@@ -42,27 +43,60 @@
         grid-column: 2/3;
     }
 
-    #spot-back {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        margin: 0px;
-        height: 100%;
-        order: -1;
-        grid-row: 1/4;
+    #hero h1 {
+        background-color: transparent;
+        text-shadow: 0px 0px 10px #000000;
+        font-size: 2.5em;
     }
 
+    #heroButton {
+        grid-row: 3;
+        margin: 1em;
+    }
 
-    div .spotSMall {
-        height: auto;
+    #spotBack {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        height: max-content;
+        order: -1;
+        grid-row: 1/4;
+        grid-column: 3/4;
+    }
+
+    div .spotSmall {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
     }
 
     div .spotLarge {
-        height: auto;
-        display: block;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #F0ECD1;
         color: #0a2233;
     }
 
+    .spotLarge h3 {
+        margin: 0.65em;
+    }
+
+    .spotLarge img {
+        width: 40%;
+        height: 40%;
+        box-shadow: 0px 0px 10px #0a2233;
+
+    }
+
+    .spotLarge p {
+        margin: 0.2em;
+    }
 
     #weather {
         margin: 0px;
@@ -74,6 +108,11 @@
         margin: 0px;
         grid-row: 3/4;
         grid-column: 1/2;
+        width: auto;
+    }
+
+    #joinButton {
+        height: max-content;
     }
 
     #news {

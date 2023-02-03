@@ -151,9 +151,9 @@ main div h3 {
 }
 
 #heroButton {
-    background-color: #245375;
+    background-color: #F0ECD1;
     text-decoration: none;
-    color: #F0ECD1;
+    color: #0a2233;
     padding: 10px;
     border-radius: 2em;
     box-shadow: 0px 0px 10px #000000;
@@ -181,12 +181,24 @@ div {
 }
 
 div .spotSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #F0ECD1;
     color: #0a2233;
-    justify-content: center;
+}
+
+.spotSmall h3 {
+    margin: 0.65em;
+}
+
+.spotSmall p {
+    margin: 0.2em;
 }
 
 .spotSmall img {
+    margin: 0.3em;
     width: 40%;
     box-shadow: 0px 0px 10px #0a2233;
 }
