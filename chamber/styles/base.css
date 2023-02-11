@@ -142,6 +142,7 @@ main div p {
 }
 
 #hero{
+    max-width:max-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 1fr 1fr 39px;
@@ -154,6 +155,7 @@ main div p {
     grid-column: 1/5;
     grid-row: 2/5;
     max-width: 100%;
+    align-self: center;
 }
 
 #hero h1 {
@@ -163,7 +165,7 @@ main div p {
     grid-column: 1/5;
     grid-row: 1/2;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 10px;
 }
 
