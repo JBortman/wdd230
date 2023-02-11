@@ -14,8 +14,13 @@
     }
 
     nav ul li a {
+        align-items: center;
         border: none;
-        padding: .5rem 1rem;
+        padding: 22px;
+    }
+
+    .socMed {
+        border: none;
     }
 
     main {
