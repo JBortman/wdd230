@@ -35,7 +35,14 @@
 
     <main>
         <div id="hero">
-            <h1>Welcome to Historic Pioche, NV!</h1>
+                <h1 id=welcome>Welcome to Historic Pioche, NV!</h1>
+                <img
+                srcset="images/wdd230-small.webp 560w, images/wdd230-med.webp 800w, images/wdd230-large.jpg 1040w"
+                sizes="(max-width: 600px) 560px,
+                800px,
+                1040px"
+                src="images/wdd230-med.webp"
+            alt="Picutre of people in a meeting"/>
             <a id="heroButton" href="#"><b>Become a Chamber Member</b></a>
         </div>
         <div id="event">
@@ -47,8 +54,9 @@
         <div id="weather">
             <h2>Weather</h2>
             <p>Condition: Sunny</p>
-            <p>Temperature: 75&#8457</p>
-            <p>Wind: 5mph NNE</p>
+            <p>Temperature: <span id="temp">50</span>&#8457</p>
+            <p>Wind Chill: <span id="chill"></span>&#8457</p>
+            <p>Wind: <span id="wind">15</span>mph NNE</p>
             <p>Humidity: 46%</p>
         </div>
         <div id="news">
@@ -92,5 +100,6 @@
         <p><span id="footDate"></span></p>
     </footer>
 <script src="scripts/chamber-script.js"></script> 
+<script src="scripts/windchill.js"></script> 
 </body>
 </html>
