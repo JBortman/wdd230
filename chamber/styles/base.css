@@ -147,21 +147,24 @@ main div p {
     padding: 5px;
 }
 
-#hero{
-    max-width:max-content;
+/* #hero{
+    width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 1fr 1fr 39px;
-    /* background-image: url(../images/hero.jpg);
+    background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
-    background-position: center; */
-}
+    background-position: center;
+} */
 
-#hero img {
+/* #hero img {
     grid-column: 1/5;
     grid-row: 2/5;
-    max-width: 100%;
     align-self: center;
+} */
+
+#hero img {
+    width: 100%;
 }
 
 #hero h1 {
@@ -176,15 +179,16 @@ main div p {
 }
 
 #heroButton {
-
+    position:relative;
+    bottom: 20px;
     background-color: #F0ECD1;
     text-decoration: none;
     color: #0a2233;
     padding: 10px;
     border-radius: 2em;
     box-shadow: 0px 0px 10px #000000;
-    grid-column: 4;
-    grid-row: 4;
+    /* grid-column: 4; */
+    /* grid-row: 4; */
     max-width: fit-content;
     height: max-content;
     margin: -5px 5px;
