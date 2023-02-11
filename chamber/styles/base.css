@@ -226,6 +226,11 @@ footer p {
     margin: 5px;
 }
 
+#map {
+    text-decoration: none;
+    color:#F0ECD1;
+}
+
 #join {
     display: none;
 }
