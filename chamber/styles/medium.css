@@ -1,17 +1,16 @@
 @media only screen and (min-width: 35rem) {
     #meeting {
     font-size: 1.5em;
+    }
 
+    .title {
+        font-size: 1.9em;
     }
 
     main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
-    .title {
-        font-size: 1.8rem;
     }
     
     #hero {
@@ -69,3 +68,5 @@
         width: 47%;
     }
 }
+
+/*-----Discover specific css-----*/

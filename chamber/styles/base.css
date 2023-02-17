@@ -13,9 +13,8 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-rows: 100px 70px;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr 45px;
     background-color:#0a2233;
     color:#F0ECD1;
 }
@@ -49,15 +48,16 @@ header {
 .title {
     border: none;
     background-color: transparent;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     height: auto;
     text-align: center;
+    padding-top: 18px;
 }
 
 #topDate {
     grid-column: 1/4;
     grid-row: 2;
-    height: 75%;
+    height: 70%;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -66,6 +66,7 @@ header {
     color:#F0ECD1;
     text-shadow: 1px 1px 2px #0a2233;
     border-radius: 2em;
+    margin-top: 4px;
 }
 
 nav {
@@ -147,51 +148,36 @@ main div p {
     padding: 5px;
 }
 
-/* #hero{
-    width: auto;
+#hero{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 1fr 39px;
+    grid-template-rows: 1fr 1fr;
     background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
-} */
-
-/* #hero img {
-    grid-column: 1/5;
-    grid-row: 2/5;
-    align-self: center;
-} */
-
-#hero img {
-    width: 100%;
 }
 
 #hero h1 {
-    margin: 0;
-    max-height: 50px;
     background-color: rgba(0,0,0,0.6);
     grid-column: 1/5;
-    grid-row: 1/2;
+    grid-row: 1;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     padding: 10px;
 }
 
 #heroButton {
-    position:relative;
-    bottom: 20px;
     background-color: #F0ECD1;
     text-decoration: none;
     color: #0a2233;
     padding: 10px;
     border-radius: 2em;
     box-shadow: 0px 0px 10px #000000;
-    /* grid-column: 4; */
-    /* grid-row: 4; */
+    grid-column: 4;
+    grid-row: 2;
     max-width: fit-content;
     height: max-content;
-    margin: -5px 5px;
+    margin: 30px 5px 0px 0px;
 }
 
 #hero a:hover {
@@ -259,3 +245,32 @@ footer p {
 .spotLarge {
     display: none;
 }
+
+/*-----Discover specific css-----*/
+.discoverImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discoverImages div{
+    width: 250px;
+    border: none;
+    background-color: transparent;
+    color:#0a2233;
+}
+
+.discoverImages div p {
+    margin: 0px 0px 10px 0px;
+    padding: 0;
+}
+
+.discoverImages img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+.discoverImages img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
