@@ -31,4 +31,3 @@ else {
     document.getElementById('meeting').hidden = true;
     // console.log(d); ---- troubleshoot getDate()
 };
-

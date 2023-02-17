@@ -67,6 +67,14 @@
         grid-column: 1;
         width: 47%;
     }
-}
+    
+    /*-----Discover specific css-----*/
+    .discoverImages {
+        flex-direction: row;
+    }
 
-/*-----Discover specific css-----*/
+    .discoverImages img:hover {
+        box-shadow: 0px 0px 50px #000000;
+      }
+
+}
