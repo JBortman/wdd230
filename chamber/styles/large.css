@@ -80,7 +80,7 @@
         grid-column: 3/4;
     }
 
-    div .spotSmall {
+    div .spot-small {
         height: auto;
         width: auto;
         display: flex;
@@ -126,7 +126,7 @@
         width: auto;
     }
 
-    #joinButton {
+    #join-button {
         height: max-content;
     }
 
