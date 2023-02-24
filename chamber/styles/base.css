@@ -278,3 +278,56 @@ footer p {
     transition: filter 0.5s;
   }
 
+/*-----Join Specific CSS-----*/
+#join-main {
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+}
+
+form {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 270px;
+    justify-content: center;
+    align-items: center;
+}
+
+form small {
+    color:#c20000;
+}
+
+input, select, textarea {
+    width: 100%;
+}
+
+#description {
+    resize: none;
+}
+
+#joinDate {
+    display: none;
+}
+
+#join-button {
+    background-color: transparent;
+    border: none;
+}
+
+button {
+    font-size: 1.3em;
+}
+
+button:hover {
+    font-size: 1.5em;
+}
+
+#levels {
+    display: none;
+}
+
+/*-----Thank You Specific CSS-----*/
+#thankyou {
+    display: flex;
+    padding: 50px;
+}

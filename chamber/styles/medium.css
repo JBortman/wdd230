@@ -43,7 +43,7 @@
         width: 100%;
     }
 
-    #join-button {
+    #home-button {
     background-color: #779C4F;
     text-decoration: none;
     text-align: center;
@@ -54,7 +54,7 @@
     box-shadow: 0px 0px 4px #000000;
     }
 
-    #join-button:hover {
+    #home-button:hover {
         background-color: #F0ECD1;
         font-size: 1.6rem;
     }

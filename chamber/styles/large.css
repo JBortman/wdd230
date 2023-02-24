@@ -34,7 +34,6 @@
     main {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 10px;
         max-width: 1040px;
         height: max-content;
@@ -126,7 +125,7 @@
         width: auto;
     }
 
-    #join-button {
+    #home-button {
         height: max-content;
     }
 
@@ -145,5 +144,36 @@
         width: 5.5rem;
         height: 5.5rem;
     }
+
+/*-----Join Specific CSS-----*/
+#join-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#levels {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #245375;
+    border-radius: 1.5em;
+}
+
+form {
+    grid-column: 1/2;
+}
+
+#levels {
+    grid-column: 2/3;
+}
+
+#levels-title {
+    text-align: center;
+    margin: 10px;
+}
+
+#levels p {
+    padding: 15px;
+}
 
 }

@@ -15,12 +15,14 @@ headDate.innerHTML = `<em>${fullDate}</em>`;
 /*-----Date and time for last updated-----*/
 const footYear = document.querySelector('#footYear');
 const footDate = document.querySelector('#footDate');
+const joinDate = document.querySelector('#joinDate')
 
 footYear.textContent = new Date().getFullYear();
 
 const date = new Date().toLocaleDateString();
 const time = new Date().toLocaleTimeString();
 footDate.innerHTML = `Last Updated: ${date} ${time}`;
+joinDate.innerHTML = `Accessed ${date} @ ${time}`;
 
 /* -----Get date for hidden message----- */
 const d = new Date().getDay();
