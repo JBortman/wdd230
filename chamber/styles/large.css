@@ -12,7 +12,7 @@
         display: none;
     }
 
-    nav ul#primaryNav {
+    nav ul#primary-nav {
         display: flex;
         justify-content: center;
     }
@@ -23,11 +23,11 @@
         padding: 22px;
     }
 
-    .socMed {
+    .social-media {
         border: none;
     }
 
-    .socMed a {
+    .social-media a {
         padding:0px;
     }
 
@@ -65,12 +65,12 @@
         font-size: 2.5em;
     }
 
-    #heroButton {
+    #hero-button {
         grid-row: 3;
         margin: 1em;
     }
 
-    #spotBack {
+    #spotlight-back {
         display: grid;
         margin: 0px;
         height: 100%;
@@ -88,7 +88,7 @@
         align-items: center;
     }
 
-    div .spotLarge {
+    div .spot-large {
         height: auto;
         display: flex;
         flex-direction: column;
@@ -98,17 +98,17 @@
         color: #0a2233;
     }
 
-    .spotLarge h3 {
+    .spot-large h3 {
         margin: 0.65em;
     }
 
-    .spotLarge img {
+    .spot-large img {
         width: 40%;
         box-shadow: 0px 0px 10px #0a2233;
 
     }
 
-    .spotLarge p {
+    .spot-large p {
         margin: 0.2em;
     }
 
@@ -140,7 +140,7 @@
         justify-content: center;
     }
 
-    #footLogo {
+    #foot-logo {
         width: 5.5rem;
         height: 5.5rem;
     }

@@ -24,7 +24,7 @@
         width: 100%;
     }
 
-    #spotBack {
+    #spotlight-back {
         display: flex;
         grid-column: 3;
         order: -1;
@@ -69,11 +69,11 @@
     }
     
     /*-----Discover specific css-----*/
-    .discoverImages {
+    .discover-images {
         flex-direction: row;
     }
 
-    .discoverImages img:hover {
+    .discover-images img:hover {
         box-shadow: 0px 0px 50px #000000;
       }
 

@@ -14,15 +14,15 @@
 </head>
 <body>
     <header>
-        <img id="chamLogo" src="images/pcc-logo-s.webp" alt="Pioche Chamber of Commerce Logo">
+        <img id="chamber-logo" src="images/pcc-logo-s.webp" alt="Pioche Chamber of Commerce Logo">
         <div class="title"><b>Pioche Chamber of Commerce</b></div>
-        <div id="topDate"><span id="headDate"></span></div>
+        <div id="top-date"><span id="head-date"></span></div>
     </header>
     <nav>
-        <button id="hamBut">&#9776;</button>
-        <ul id="primaryNav">
+        <button id="ham-but">&#9776;</button>
+        <ul id="primary-nav">
             <li>
-                <div class="socMed">
+                <div class="social-media">
                     <a href ="https://www.linkedin.com/"><img id="lnkin" src="images/linkedin.jpg" alt="linkedin logo" ></a>
                     <a href ="https://www.facebook.com/"><img id="facebk" src="images/facebook.jpg" alt="facebook logo" ></a>
                 </div>
@@ -35,7 +35,7 @@
         </ul>
     </nav>
     <main id="join-main">
-        <form id="join-form" action="thankyou.html">
+        <form id="join-form" action="thank-you.html">
             <label for="first">First name: <small>(Required)</small></label><br>
             <input type="text" id="first" name="first" required> <br>
             <br>
@@ -76,7 +76,7 @@
             placeholder="Briefly describe your business, help us get to know you!"></textarea><br>
             <br>
 
-            <span id="joinDate"></span>
+            <span id="join-date"></span>
             <div id="join-button">
                 <button>Submit</button>
             </div>
@@ -109,13 +109,14 @@
         </div>
     </main>
     <footer id="small">
-        <img id="footLogo" src="images/pcc-logo-s.webp" alt="Pioche Chamber of Commerce Logo">
-        <p>&copy; <span id="footYear"></span> Pioche Chamber of Commerce</p>
+        <img id="foot-logo" src="images/pcc-logo-s.webp" alt="Pioche Chamber of Commerce Logo">
+        <div id="foot-text">
+        <p>&copy; <span id="foot-year"></span> Pioche Chamber of Commerce</p>
         <a id="map" href="https://www.google.com/maps/place/Pioche+Town+Hall/@37.9345696,-114.4511988,18.88z/data=!4m5!3m4!1s0x80b66140595dd179:0xa607dd224c2b45aa!8m2!3d37.9346019!4d-114.4508955" target="_blank" rel="noopener noreferrer"><b>345 Main St, Pioche, NV, 89043</b></a>
-        <p>Jordan Bortman | WDD 230 Project | <span id="footDate"></span></p>
+        <p>Jordan Bortman | WDD 230 Project | <span id="foot-date"></span></p>
+    </div>
     </footer>
+    <script src="scripts/join-scripts.js"></script> 
     <script src="scripts/chamber-script.js"></script> 
-    <script src="scripts/lazy-load.js"></script> 
-    <script src="scripts/dates-between.js"></script> 
 </body>
 </html>

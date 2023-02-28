@@ -20,18 +20,11 @@ header {
     padding: 5px;
 }
 
-#chamLogo {
+#chamber-logo {
     height: 90px;
     width: 90px;
     padding: 5px;
     border-radius: 3em;
-}
-
-#footLogo {
-    height: 100px;
-    width: 100px;
-    padding: 5px;
-    border-radius: 3.5em;
 }
 
 #lnkin{
@@ -55,7 +48,7 @@ header {
     padding-top: 18px;
 }
 
-#topDate {
+#top-date {
     grid-column: 1/4;
     grid-row: 2;
     height: 70%;
@@ -107,7 +100,7 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.5);
 }
 
-.socMed {
+.social-media {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -118,7 +111,7 @@ nav ul li a {
     
 }
 
-.socMed a {
+.social-media a {
     border: none;
 }
 
@@ -168,7 +161,7 @@ main div p {
     padding: 10px;
 }
 
-#heroButton {
+#hero-button {
     background-color: #F0ECD1;
     text-decoration: none;
     color: #0a2233;
@@ -195,7 +188,7 @@ div {
     
 }
 
-#spotBack {
+#spotlight-back {
     max-height: max-content;
 }
 
@@ -223,10 +216,8 @@ div .spot-small {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 100px 1fr;
     background-color:#0a2233;
     border: 1px solid black;
     color:#F0ECD1;
@@ -234,6 +225,22 @@ footer {
 
 footer p {
     margin: 5px;
+}
+
+#foot-logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 3.5em;
+
+}
+
+#foot-text {
+    background-color: transparent;
+    border: none;
+    text-align: center;
 }
 
 #map {
@@ -244,19 +251,19 @@ footer p {
     display: none;
 }
 
-.spotLarge {
+.spot-large {
     display: none;
 }
 
 /*-----Discover specific css-----*/
-.discoverImages {
+.discover-images {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.discoverImages div{
+.discover-images div{
     width: 250px;
     height: 400px;
     border: none;
@@ -264,15 +271,15 @@ footer p {
     color:#0a2233;
 }
 
-.discoverImages p {
+.discover-images p {
     margin: 0px 0px 10px 0px;
 }
 
-.discoverImages img[data-src] {
+.discover-images img[data-src] {
     filter: blur(0.2em);
   }
   
-.discoverImages img {
+.discover-images img {
     box-shadow: 0px 0px 10px #000000;
     filter: blur(0em);
     transition: filter 0.5s;
@@ -305,7 +312,7 @@ input, select, textarea {
     resize: none;
 }
 
-#joinDate {
+#join-date {
     display: none;
 }
 
@@ -318,7 +325,7 @@ button {
     font-size: 1.3em;
 }
 
-button:hover {
+#join-button:hover {
     font-size: 1.5em;
 }
 
@@ -327,7 +334,7 @@ button:hover {
 }
 
 /*-----Thank You Specific CSS-----*/
-#thankyou {
+#thank-you {
     display: flex;
     flex-direction: column;
     text-align: center;
