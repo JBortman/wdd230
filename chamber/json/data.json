@@ -1,0 +1,84 @@
+{
+    "companies" : [
+      {
+        "name" :"Main Street Mechanics",
+        "address" :"75 Main St",
+        "phone" :"702-867-5309",
+        "website" :"www.mainstreetmechs.com",
+        "logo" :"main-mechanic.webp",
+        "level" :"Gold Ingot"
+      },
+
+      {
+        "name" :"Miner's Grocery Stores",
+        "address" :"23 Main St",
+        "phone" :"702-867-5309",
+        "website" :"www.minerstore.com",
+        "logo" :"miner-store.webp",
+        "level" :"Silver State"
+      },
+
+      {
+        "name" :"Landscaping Company",
+        "address" :"125 Hinman St",
+        "phone" :"702-867-5309",
+        "website" :"www.landscaping.com",
+        "logo" :"landscaping.webp",
+        "level" :"Bronze Pickaxe"
+      },
+
+      {
+        "name" :"Ghost Town Cafe",
+        "address" :"8 Main St",
+        "phone" :"702-867-5309",
+        "website" :"www.ghosttowncafe.com",
+        "logo" :"ghost-town.webp",
+        "level" :"Silver State"
+      },
+
+      {
+        "name" :"Nevada Club",
+        "address" :"76 Main St",
+        "phone" :"702-867-5309",
+        "website" :"www.nvclub.com",
+        "logo" :"",
+        "level" :"Gold Ingot"
+      },
+
+      {
+        "name" :"Lincoln County Library",
+        "address" :"70 Main St",
+        "phone" :"702-867-5309",
+        "website" :"www.lincolnlibrary.com",
+        "logo" :"library.webp",
+        "level" :"NP (Non-profit)"
+      },
+
+      {
+        "name" :"Billy's",
+        "address" :"10 Main St",
+        "phone" :"702-867-5309",
+        "website" :"www.billys.com",
+        "logo" :"billys.webp",
+        "level" :"Silver State"
+      },
+
+      {
+        "name" :"Silver Cafe",
+        "address" :"87 Main St",
+        "phone" :"702-867-5309",
+        "website" :"www.silvercafe.com",
+        "logo" :"silver-cafe.webp",
+        "level" :"Gold Ingot"
+      },
+
+      {
+        "name" :"Vault Bar",
+        "address" :"86 Main St",
+        "phone" :"702-867-5309",
+        "website" :"www.vaultbar.com",
+        "logo" :"vault.webp",
+        "level" :"Silver State"
+      }     
+    ]
+  }
