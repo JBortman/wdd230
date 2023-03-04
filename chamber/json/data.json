@@ -2,7 +2,7 @@
     "companies" : [
       {
         "name" :"Main Street Mechanics",
-        "address" :"75 Main St",
+        "address" :"75 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.mainstreetmechs.com",
         "logo" :"main-mechanic.webp",
@@ -11,7 +11,7 @@
 
       {
         "name" :"Miner's Grocery Stores",
-        "address" :"23 Main St",
+        "address" :"23 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.minerstore.com",
         "logo" :"miner-store.webp",
@@ -20,7 +20,7 @@
 
       {
         "name" :"Landscaping Company",
-        "address" :"125 Hinman St",
+        "address" :"125 Hinman St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.landscaping.com",
         "logo" :"landscaping.webp",
@@ -29,7 +29,7 @@
 
       {
         "name" :"Ghost Town Cafe",
-        "address" :"8 Main St",
+        "address" :"8 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.ghosttowncafe.com",
         "logo" :"ghost-town.webp",
@@ -38,7 +38,7 @@
 
       {
         "name" :"Nevada Club",
-        "address" :"76 Main St",
+        "address" :"76 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.nvclub.com",
         "logo" :"",
@@ -47,7 +47,7 @@
 
       {
         "name" :"Lincoln County Library",
-        "address" :"70 Main St",
+        "address" :"70 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.lincolnlibrary.com",
         "logo" :"library.webp",
@@ -56,7 +56,7 @@
 
       {
         "name" :"Billy's",
-        "address" :"10 Main St",
+        "address" :"10 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.billys.com",
         "logo" :"billys.webp",
@@ -65,7 +65,7 @@
 
       {
         "name" :"Silver Cafe",
-        "address" :"87 Main St",
+        "address" :"87 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.silvercafe.com",
         "logo" :"silver-cafe.webp",
@@ -74,7 +74,7 @@
 
       {
         "name" :"Vault Bar",
-        "address" :"86 Main St",
+        "address" :"86 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.vaultbar.com",
         "logo" :"vault.webp",

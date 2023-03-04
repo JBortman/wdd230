@@ -151,19 +151,13 @@
     grid-template-columns: 1fr 1fr;
 }
 
-#levels {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    background-color: #245375;
-    border-radius: 1.5em;
-}
-
 form {
+    grid-row: 1/2;
     grid-column: 1/2;
 }
 
 #levels {
+    width: auto;
     grid-column: 2/3;
 }
 

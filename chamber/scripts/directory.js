@@ -1,3 +1,4 @@
+//-----JSON-----
 const file = 'json/data.json'
 
 async function getFileData() {
@@ -23,13 +24,15 @@ const displayInfo = (companies) => {
 
         h2.textContent = company.name;
         p1.textContent = company.address;
-        p2.textContent = company.phone;
+        p2.textContent =   `Phone: ${company.phone}`;
         p3.textContent = company.website;
         h3.textContent = `Member Level: ${company.level}`;
 
         logo.setAttribute('alt', `${company.name} logo`);
         logo.setAttribute('src', 'images/sweetroll-placeholder.webp');
         logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('height', 200)
+        logo.setAttribute('width', 200)
 
         
 
@@ -46,5 +49,7 @@ const displayInfo = (companies) => {
 
 }
 
+//-----Button-----
+const button = querySelector("#direcoty-button")
 
-
+button.addEventListener("click" )
