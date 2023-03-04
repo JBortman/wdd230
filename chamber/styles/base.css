@@ -445,3 +445,7 @@ button {
 #list-view h2 {
     font-size: 1.05em;
 }
+
+#list-view a {
+    color: #F0ECD1;
+}

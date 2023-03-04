@@ -51,29 +51,33 @@ const displayGrid = (companies) => {
 }
 
 const displayList = (companies) => {
-    const item = document.querySelector('div.list')
+    const list = document.querySelector('div.list')
 
     companies.forEach((company) => {
-        let card = document.createElement('section');
+        let item = document.createElement('section');
         let h2 = document.createElement('h2');
         let p1 = document.createElement('p');
         let p2 = document.createElement('p');
-        let p3 = document.createElement('p');
+        let link = document.createElement('a');
+
 
         h2.textContent = company.name;
         p1.textContent = company.address;
         p2.textContent =   company.phone;
-        p3.textContent = company.website;
 
+        link.textContent = "Visit";
+        link.title = "Website";
+        link.href = "#"
 
         
 
-        card.appendChild(h2);
-        card.appendChild(p1);
-        card.appendChild(p2);
-        card.appendChild(p3);
+        item.appendChild(h2);
+        item.appendChild(p1);
+        item.appendChild(p2);
+        item.appendChild(link);
 
-        item.appendChild(card);
+
+    list.appendChild(item);
     
     })
 
