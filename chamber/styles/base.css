@@ -365,11 +365,21 @@ button {
     background-color: #0a2233;
 }
 
-#directory-button {
+#directory-buttons {
+    background-color: transparent;
+    border: none;
+}
+
+#directory-main button {
     margin: 10px auto;
 }
 
 /* -----Cards----- */
+#card-view {
+    background-color: transparent;
+    border: none;
+}
+
 .cards {
     border: none;
     background-color: transparent;
@@ -380,7 +390,8 @@ button {
 }
 
 .cards section {
-    background-color: #F0ECD1;
+    background-color: #74624e;
+    color: #F0ECD1;
     margin: 0 auto;
     width: 300px;
 }
@@ -393,7 +404,8 @@ button {
     margin: 0;
     padding: 10px 0px;
     text-shadow: none;
-    background-color: rgba(0,0,0,0.2);
+    background-color: #5a4834;
+    color: #F0ECD1;
 }
 
 .cards img {
@@ -401,4 +413,35 @@ button {
 }
 
 /* -----List----- */
+.list {
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+}
 
+.list section:nth-child(even) {
+    background-color: #74624e;
+}
+
+.list section:nth-child(odd) {
+    background-color: #5a4834;
+}
+
+#list-view {
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    border-radius: 2em;
+    padding: 5px;
+}
+
+#list-view h2 {
+    font-size: 1.05em;
+}

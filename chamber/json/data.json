@@ -10,7 +10,7 @@
       },
 
       {
-        "name" :"Miner's Grocery Stores",
+        "name" :"Miner's Grocery Store",
         "address" :"23 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.minerstore.com",
@@ -41,7 +41,7 @@
         "address" :"76 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.nvclub.com",
-        "logo" :"",
+        "logo" :"nv-club.webp",
         "level" :"Gold Ingot"
       },
 

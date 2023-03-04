@@ -5,12 +5,13 @@ async function getFileData() {
     const response = await fetch(file);
         const data = await response.json();
         //console.table(data.companies)
-        displayInfo(data.companies);
+        displayGrid(data.companies);
+        displayList(data.companies);
     };
 
 getFileData();
 
-const displayInfo = (companies) => {
+const displayGrid = (companies) => {
     const cards = document.querySelector('div.cards')
 
     companies.forEach((company) => {
@@ -29,10 +30,10 @@ const displayInfo = (companies) => {
         h3.textContent = `Member Level: ${company.level}`;
 
         logo.setAttribute('alt', `${company.name} logo`);
-        logo.setAttribute('src', 'images/sweetroll-placeholder.webp');
+        logo.setAttribute('src', `images/${company.logo}`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('height', 200)
-        logo.setAttribute('width', 200)
+        logo.setAttribute('height', 250)
+        logo.setAttribute('width', 250)
 
         
 
@@ -49,7 +50,49 @@ const displayInfo = (companies) => {
 
 }
 
-//-----Button-----
-const button = querySelector("#direcoty-button")
+const displayList = (companies) => {
+    const item = document.querySelector('div.list')
 
-button.addEventListener("click" )
+    companies.forEach((company) => {
+        let card = document.createElement('section');
+        let h2 = document.createElement('h2');
+        let p1 = document.createElement('p');
+        let p2 = document.createElement('p');
+        let p3 = document.createElement('p');
+
+        h2.textContent = company.name;
+        p1.textContent = company.address;
+        p2.textContent =   company.phone;
+        p3.textContent = company.website;
+
+
+        
+
+        card.appendChild(h2);
+        card.appendChild(p1);
+        card.appendChild(p2);
+        card.appendChild(p3);
+
+        item.appendChild(card);
+    
+    })
+
+}
+
+//-----Buttons-----
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const cards = document.querySelector("div#card-view")
+const list = document.querySelector("div#list-view")
+
+gridButton.addEventListener('click', () => {
+    cards.hidden=false;
+    list.hidden=true;
+})
+
+
+listButton.addEventListener('click', () => {
+    cards.hidden=true;
+    list.hidden=false;
+    
+})
