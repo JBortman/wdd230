@@ -1,0 +1,19 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(146, 202, 255);
+}
+
+#current-temp {
+    font-size: 1.3em;
+}
+
+figcaption {
+    text-transform: capitalize;
+}
+
+img {
+    box-shadow: 0px 0px 15px #ffffff;
+    border-radius: 2em;
+}
