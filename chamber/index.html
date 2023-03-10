@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home page for chamber of commerce website project - Jordan Bortman WDD230 - BYU-I">    
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -38,11 +39,13 @@
     <main>
         <div id="hero">
             <h1 id=welcome>Welcome to Historic Pioche, NV!</h1>
-            <!-- <picture>
+            <!-- 
+                <picture>
                     <source srcset="images/wdd230-med.webp" media="(min-width: 560px) and (max-width: 799px)">
                         <source srcset="images/wdd230-large.webp" media="(min-width: 800px)">
                 <img src="images/wdd230-small.webp" alt="Picutre of people in a meeting">
-            </picture> -----kept from week 6 lesson-->
+            </picture> 
+            kept from week 6 lesson-->
             <a id="hero-button" href="join.html"><b>Become a Chamber Member</b></a>
         </div>
         <div id="event">
@@ -53,14 +56,19 @@
         </div>
         <div id="weather">
             <h2>Weather</h2>
-                <figure>
-                    <img src="" alt="" id="icon" />
-                    <span id="temp"></span>&#8457;
-                    <figcaption></figcaption>
-                </figure>
-            <p>Wind: <span id="wind"></span> mph</p>
-            <p>Feels Like: <span id="chill"></span>&#8457;</p>
-            <p>Humidity: <span id="humidity"></span>%</p>
+            <p id="api">Data Source: <a id="weather-link" href='https://openweathermap.org/'>OpenWeatherMap</a></p>
+                <div id="temp-info">
+                    <figure>
+                        <img src="#" alt="icon" id="icon">
+                        <figcaption></figcaption>
+                    </figure>
+                    <h3><span id="temp"></span>&#8457;</h3>
+                </div>
+                <div id="wind-info">
+                    <p>Feels Like: <span id="chill"></span>&#8457;</p>
+                    <p>Wind: <span id="wind"></span> mph</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                </div>
         </div>
         <div id="news">
             <h2>News</h2>

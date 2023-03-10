@@ -118,6 +118,18 @@
         width: 100%;
     }
 
+    #wind-info {
+        border-bottom: 1px solid #000000;
+    }
+
+    figure {
+        padding: 0px 10px 0px 10px;
+    }
+
+    #icon {
+        width: 100%;
+    }
+
     #join {
         margin: 0px;
         grid-row: 3/4;
