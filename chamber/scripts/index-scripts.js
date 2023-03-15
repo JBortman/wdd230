@@ -162,10 +162,6 @@ const displaySpotlights = (companies) => {
     spot3.appendChild(image3);
     spot3.appendChild(p13);
     spot3.appendChild(p23);
-    
-    console.table(spotCompany);
-    console.table(spotCompany2);
-    console.table(spotCompany3);
 } //----It is a lot, but it allows the spolights to not repeat
 
 
