@@ -5,6 +5,7 @@
         "address" :"75 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.mainstreetmechs.com",
+        "email" :"contact@msm.com",
         "logo" :"main-mechanic.webp",
         "level" :"Gold Ingot"
       },
@@ -14,6 +15,7 @@
         "address" :"23 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.minerstore.com",
+        "email" :"contact@minerstore.com",
         "logo" :"miner-store.webp",
         "level" :"Silver State"
       },
@@ -23,6 +25,7 @@
         "address" :"125 Hinman St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.landscaping.com",
+        "email" :"contact@landscaping.com",
         "logo" :"landscaping.webp",
         "level" :"Bronze Pickaxe"
       },
@@ -32,6 +35,7 @@
         "address" :"8 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.ghosttowncafe.com",
+        "email" :"contact@ghosttown.com",
         "logo" :"ghost-town.webp",
         "level" :"Silver State"
       },
@@ -41,6 +45,7 @@
         "address" :"76 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.nvclub.com",
+        "email" :"contact@nvclub.com",
         "logo" :"nv-club.webp",
         "level" :"Gold Ingot"
       },
@@ -50,6 +55,7 @@
         "address" :"70 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.lincolnlibrary.com",
+        "email" :"contact@lclibrary.com",
         "logo" :"library.webp",
         "level" :"NP (Non-profit)"
       },
@@ -59,6 +65,7 @@
         "address" :"10 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.billys.com",
+        "email" :"contact@billy.com",
         "logo" :"billys.webp",
         "level" :"Silver State"
       },
@@ -68,6 +75,7 @@
         "address" :"87 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.silvercafe.com",
+        "email" :"contact@silvercafe.com",
         "logo" :"silver-cafe.webp",
         "level" :"Gold Ingot"
       },
@@ -77,8 +85,9 @@
         "address" :"86 Main St, Pioche, NV 89043",
         "phone" :"702-867-5309",
         "website" :"www.vaultbar.com",
+        "email" :"contact@thevault.com",
         "logo" :"vault.webp",
-        "level" :"Silver State"
+        "level" :"Bronze Pickaxe"
       }     
     ]
   }

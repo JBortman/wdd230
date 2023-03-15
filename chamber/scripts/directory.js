@@ -11,6 +11,8 @@ async function getFileData() {
 
 getFileData();
 
+
+//-----Directory-----
 const displayGrid = (companies) => {
     const cards = document.querySelector('div.cards')
 
@@ -34,8 +36,6 @@ const displayGrid = (companies) => {
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('height', 250)
         logo.setAttribute('width', 250)
-
-        
 
         card.appendChild(h2);
         card.appendChild(p1);

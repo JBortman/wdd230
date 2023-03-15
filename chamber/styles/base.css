@@ -528,3 +528,42 @@ button {
 #list-view a {
     color: #F0ECD1;
 }
+
+/* -----Contact----- */
+#contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-div {
+    background-color: #779C4F;
+    text-shadow: 0px 0px 5px #000000;
+    grid-column: 1/2;
+}
+
+#contact-form {
+    grid-column: 2/3;
+}
+
+.contacts {
+    border: none;
+    border-radius: 2em;
+    background-color: rgba(0,0,0,0.4);
+    text-shadow: 0px 0px 5px #000000;
+    box-shadow: 0px 0px 5px #000000;
+    margin: 15px auto;
+    width: 70%;
+    padding: 3px;
+}
+
+.contacts p {
+    padding: 0px;
+}
+
+#contact-button {
+    background-color: transparent;
+    border: none;
+}

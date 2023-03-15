@@ -72,3 +72,105 @@ function displayResults(weatherdata) {
     icon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
 }
+
+//-----Index JSON-----
+const file = 'json/data.json'
+
+async function getFileData() {
+    const response = await fetch(file);
+        const data = await response.json();
+        //console.table(data.companies)
+        displaySpotlights(data.companies);
+    };
+
+getFileData();
+
+//-----Spotlights------
+const displaySpotlights = (companies) => {
+    let spot1 = document.querySelector('div#spot1');
+    let h3 = document.createElement('h3');
+    let image = document.createElement('img');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p'); 
+
+
+//-----Spotlight1-----
+    let spotCompany = companies.filter(function(test) {
+        return test.level != "Bronze Pickaxe" && test.level != "NP (Non-profit)";
+    });
+    let randCompany = spotCompany[Math.floor(Math.random()*spotCompany.length)];
+
+    h3.textContent = randCompany.name;
+    p1.textContent = randCompany.email;
+    p2.textContent = randCompany.phone;
+
+    image.setAttribute('alt', `${randCompany.name} logo`);
+    image.setAttribute('src', `images/${randCompany.logo}`);
+    image.setAttribute('loading', 'lazy');
+
+    spot1.appendChild(h3);
+    spot1.appendChild(image);
+    spot1.appendChild(p1);
+    spot1.appendChild(p2);
+
+//-----Spotlight2-----
+    let spot2 = document.querySelector('div#spot2');
+    let h32 = document.createElement('h3');
+    let image2 = document.createElement('img');
+    let p12 = document.createElement('p');
+    let p22 = document.createElement('p');
+
+    let spotCompany2 = companies.filter(function(test) {
+        return test.level != "Bronze Pickaxe" && test.level != "NP (Non-profit)" && test.name != randCompany.name;
+    });
+    let randCompany2 = spotCompany2[Math.floor(Math.random()*spotCompany2.length)];
+
+    h32.textContent = randCompany2.name;
+    p12.textContent = randCompany2.email;
+    p22.textContent = randCompany2.phone;
+
+    image2.setAttribute('alt', `${randCompany2.name} logo`);
+    image2.setAttribute('src', `images/${randCompany2.logo}`);
+    image2.setAttribute('loading', 'lazy');
+
+    spot2.appendChild(h32);
+    spot2.appendChild(image2);
+    spot2.appendChild(p12);
+    spot2.appendChild(p22);
+
+//-----Spotlight2-----
+    let spot3 = document.querySelector('div#spot3');
+    let h33 = document.createElement('h3');
+    let image3 = document.createElement('img');
+    let p13 = document.createElement('p');
+    let p23 = document.createElement('p');
+
+    let spotCompany3 = companies.filter(function(test) {
+        return test.level != "Bronze Pickaxe" && test.level != "NP (Non-profit)" && test.name != randCompany.name && test.name != randCompany2.name;
+    });
+    let randCompany3 = spotCompany3[Math.floor(Math.random()*spotCompany3.length)];
+
+    h33.textContent = randCompany3.name;
+    p13.textContent = randCompany3.email;
+    p23.textContent = randCompany3.phone;
+
+    image3.setAttribute('alt', `${randCompany3.name} logo`);
+    image3.setAttribute('src', `images/${randCompany3.logo}`);
+    image3.setAttribute('loading', 'lazy');
+
+    spot3.appendChild(h33);
+    spot3.appendChild(image3);
+    spot3.appendChild(p13);
+    spot3.appendChild(p23);
+    
+    console.table(spotCompany);
+    console.table(spotCompany2);
+    console.table(spotCompany3);
+
+
+
+
+   
+}
+
+
