@@ -549,6 +549,14 @@ button {
     width: 70%;
 }
 
+#contact-form input, #description {
+    background-color: #c5f195;
+}
+
+#contact-form input:hover, #description:hover {
+    background-color: #8aceff;
+}
+
 .contacts {
     border: none;
     border-radius: 2em;
