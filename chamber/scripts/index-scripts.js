@@ -85,7 +85,9 @@ async function getFileData() {
 
 getFileData();
 
-//-----Spotlights------
+//---------------Spotlights----------------
+
+//-----Spotlight1-----
 const displaySpotlights = (companies) => {
     let spot1 = document.querySelector('div#spot1');
     let h3 = document.createElement('h3');
@@ -93,8 +95,6 @@ const displaySpotlights = (companies) => {
     let p1 = document.createElement('p');
     let p2 = document.createElement('p'); 
 
-
-//-----Spotlight1-----
     let spotCompany = companies.filter(function(test) {
         return test.level != "Bronze Pickaxe" && test.level != "NP (Non-profit)";
     });
@@ -138,7 +138,7 @@ const displaySpotlights = (companies) => {
     spot2.appendChild(p12);
     spot2.appendChild(p22);
 
-//-----Spotlight2-----
+//-----Spotlight3-----
     let spot3 = document.querySelector('div#spot3');
     let h33 = document.createElement('h3');
     let image3 = document.createElement('img');
@@ -166,11 +166,6 @@ const displaySpotlights = (companies) => {
     console.table(spotCompany);
     console.table(spotCompany2);
     console.table(spotCompany3);
-
-
-
-
-   
-}
+} //----It is a lot, but it allows the spolights to not repeat
 
 
