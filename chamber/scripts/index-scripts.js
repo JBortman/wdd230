@@ -8,8 +8,28 @@ else {
     document.getElementById('meeting').hidden = true;
 };
 
+// -----Weather API-----
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Pioche&units=imperial&appid=c24c8561a97560a6383a790eb1954865';
 
-// -----Wind Chill Script-----
+async function getWeatherData() {
+    try {
+      const response = await fetch(url);
+      if (response.ok) {
+        const data = await response.json();
+        //console.log(data); // this is for testing the call
+        displayResults(data);
+        calculateChill(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  getWeatherData();
+
+  // -----Wind Chill Script-----
 
 function calculateChill (weatherdata) {
     const tempHTML = weatherdata.main.temp.toFixed(0);
@@ -31,27 +51,6 @@ function calculateChill (weatherdata) {
         document.querySelector('#chill').textContent = "N/A"
     }
 }
-
-// -----Weather API-----
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Pioche&units=imperial&appid=c24c8561a97560a6383a790eb1954865';
-
-async function apiFetch() {
-    try {
-      const response = await fetch(url);
-      if (response.ok) {
-        const data = await response.json();
-        //console.log(data); // this is for testing the call
-        displayResults(data);
-        calculateChill(data);
-      } else {
-          throw Error(await response.text());
-      }
-    } catch (error) {
-        console.log(error);
-    }
-  }
-  
-  apiFetch();
 
 // -----Get Weather API info-----
 const currentTemp = document.querySelector('#temp')

@@ -267,12 +267,9 @@ footer p {
     background-color:#5a4834;
 }
 
-p#api {
-    background-color: #5a4834;
-}
-
 #api a {
-    color:#F0ECD1
+    color:#50b6ff;
+    font-weight: 500;
 }
 
 #weather p{ 
