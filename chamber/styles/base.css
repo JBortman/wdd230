@@ -1,4 +1,6 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
 #meeting {
     background-color: #779C4F;
     color:#0a2233;
@@ -29,12 +31,14 @@ header {
 
 #lnkin{
     height: 50px;
+    width: 50px;
     border-radius: 2em;
     padding: 5px;
 }
 
 #facebk {
     height: 50px;
+    width: 50px;
     border-radius: 2em;
     padding: 5px;
 }
@@ -147,7 +151,7 @@ main div p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-image: url(../images/hero.jpg);
+    background-image: url(../images/hero.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -312,10 +316,10 @@ figcaption{
     color: #000000;
 }
 
-#icon {
+img#icon {
     grid-column: 2/3;
-    width: 60%;
-    margin: auto;
+    height: 50px;
+    width: 50px;
 }
 
 #wind-info {
@@ -329,6 +333,11 @@ figcaption{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.current {
+    font-weight: 600;
+    background-color: rgba(0,0,0,0.5);
 }
 
 /*-----Discover specific css-----*/
@@ -394,7 +403,7 @@ input:hover, input:focus, textarea:hover, textarea:focus {
     background-color: #fff78c;
 }
 
-#description {
+#join-description {
     resize: none;
 }
 
