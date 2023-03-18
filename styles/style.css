@@ -3,7 +3,7 @@ body {
 	flex-direction: column;
 	align-items: center;
     font-family: 'Cuprum', sans-serif;
-    
+    background-color: #d4d4d4;
 }
 
 section {
