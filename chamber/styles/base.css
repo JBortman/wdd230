@@ -168,7 +168,7 @@ main div p {
 }
 
 #hero-button {
-    background-color: #F0ECD1;
+    background-color: #779C4F;
     text-decoration: none;
     color: #0a2233;
     padding: 10px;
@@ -181,9 +181,21 @@ main div p {
     margin: 30px 5px 0px 0px;
 }
 
-#hero a:hover {
-    background-color: #779C4F;
+.input-buttons {
     color: #0a2233;
+    background-color: #779C4F;
+    padding: 10px;
+    border-radius: 2em;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.input-buttons:hover, #hero-button:hover, #home-button:hover {
+    background-color: #F0ECD1;
+    font-size: 1.4rem;
+}
+
+#hero-button:hover {
+    font-size: 1.1rem;
 }
 
 div {
@@ -393,17 +405,6 @@ form small {
     color:#c20000;
 }
 
-input, select, textarea {
-    border-radius: 1em;
-    padding: 5px;
-    background-color: #ffdeb8;
-    width: 100%;
-}
-
-input:hover, input:focus, textarea:hover, textarea:focus {
-    background-color: #fff78c;
-}
-
 #join-description {
     resize: none;
 }
@@ -419,10 +420,6 @@ input:hover, input:focus, textarea:hover, textarea:focus {
 
 button {
     font-size: 1.3em;
-}
-
-#join-button:hover {
-    font-size: 1.5em;
 }
 
 #levels {
@@ -556,11 +553,14 @@ button {
     width: 70%;
 }
 
-#contact-form input, #description {
+#contact-form input, #description, input, select, textarea {
+    border-radius: 1em;
+    padding: 5px;
+    width: 100%;
     background-color: #c5f195;
 }
 
-#contact-form input:hover, #description:hover {
+#contact-form input:hover, #description:hover, input:hover, input:focus, textarea:hover, textarea:focus {
     background-color: #8aceff;
 }
 
