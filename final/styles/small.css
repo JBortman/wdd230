@@ -68,6 +68,10 @@ nav a:hover {
     background-color: rgba(0,0,0,0.5);
 }
 
+.current {
+    background-color: #FF7070;
+}
+
 /*-----Summary Div-----*/
 #summary, #summary img, #summary p {
     border: 1px solid;
@@ -120,7 +124,7 @@ nav a:hover {
     text-align: center;
 }
 
-#fresh-div h2 {
+#fresh-div h2, #drink-number {
     margin: 0px;
     color:#FFFFBC;
     background-color: rgba(0,0,0,0.8);
@@ -271,14 +275,9 @@ footer p {
 #foot-logo, footer a{
     height: 50px;
     width: 50px;
-    border: 1px solid #000000;
     grid-row: 1/4;
     margin: auto;
     align-items: center;
-}
-
-footer a {
-    grid-column: 3/4;
 }
 
 #weather-link {

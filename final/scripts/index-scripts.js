@@ -129,3 +129,8 @@ function displayForecast(forecastInfo) {
     third.appendChild(d3img);
     third.appendChild(d3p1);
 }
+
+//-----Get number of drinks-----
+const p = document.querySelector('#drink-number')
+let prevNumber = Number(window.localStorage.getItem("number-of-orders"));
+p.innerHTML = `You have ordered ${prevNumber} drinks!`

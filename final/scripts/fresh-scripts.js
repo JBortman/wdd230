@@ -44,7 +44,9 @@ const fruit3 = document.querySelector('#fruit3');
   const orderInfo = document.querySelector('#order-info')
   const button = document.querySelector('#order-button');
   let curDate = new Date().toLocaleDateString();
-  
+  let prevNumber = Number(window.localStorage.getItem("number-of-orders"));
+
+
   let carbs = 0;
   let protein = 0;
   let fat = 0;
@@ -60,5 +62,7 @@ button.addEventListener("click", function() {
     p.innerHTML = `${firstName.value}<br>${email.value}<br>${phone.value}<br>${f1.value}<br>${f2.value}<br>${f3.value}<br>${special.value}<br>${curDate}`;
 
     orderInfo.appendChild(h2)
-    orderInfo.appendChild(p)    
+    orderInfo.appendChild(p)
+    let newNumber = prevNumber + 1;
+    Number(window.localStorage.setItem("number-of-orders",newNumber))
 })
