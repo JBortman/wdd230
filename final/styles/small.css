@@ -5,6 +5,15 @@ body {
     background-color: #FFFFBC;
 }
 
+main {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*-----Header & Nav-----*/
 #main-logo, #foot-logo {
     justify-self: center;
@@ -38,6 +47,7 @@ header, footer {
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -63,28 +73,42 @@ nav a:hover {
     border: 1px solid;
 }
 
+#sum-img {
+    display: block;
+}
+
 #summary {
     margin: 10px auto;
-    width: 80%;
+    height: 228px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    background-image: url(../images/fruit.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
 }
 
 #summary img{
-    height: 300px;
+    height: auto;
+    max-height: 350px;
+    max-width: 350px;
 }
 
 #summary p {
+    background-color: rgba(255,255,255,0.8);
+    font-size: 0.9em;
+    box-shadow: 0px 5px 10px #FFFFBC, 0px -5px 10px #FFFFBC;
     margin: 0;
+    border: none;
 }
 
 /* -----Fresh Div----- */
-#fresh-div {
-    border: 1px solid;
-}
 
 #fresh-div {
+    border: 1px solid;
     background-image: url(../images/drinks.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -196,11 +220,35 @@ h2#fore-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100%;
+}
+
+.days img {
+    max-width: 80px;
 }
 
 .days p {
     margin: 0;
+}
+
+/* -----Contact----- */
+#contact {
+    text-align: center;
+    width: 80%;
+    background-color: #9D0C0C;
+    margin-bottom: 10px;
+}
+
+#contact:hover {
+    color: #9D0C0C;
+    background-color: #FF7070;
+}
+
+a#contact {
+    padding: 5px;
+    font-size: 1.5em;
+    color: #ffc6c6;
 }
 
 /*-----Footer-----*/

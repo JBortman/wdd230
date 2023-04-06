@@ -45,7 +45,7 @@ async function getForecast() {
       const response = await fetch(foreUrl);
       if (response.ok) {
         const foreData = await response.json();
-        console.table(foreData.list); // this is for testing the call
+        //console.table(foreData.list); // this is for testing the call
         displayForecast(foreData);
     } else {
           throw Error(await response.text());
@@ -65,9 +65,9 @@ const days = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday', 'Su
 
 function displayForecast(forecastInfo) {
     //-----1 day-----
-    const foreIcon1 = `https://openweathermap.org/img/w/${forecastInfo.list[4].weather[0].icon}.png`;
-    const foreDesc1 = forecastInfo.list[4].weather[0].description;
-    const timestamp1 = forecastInfo.list[4].dt;
+    const foreIcon1 = `https://openweathermap.org/img/w/${forecastInfo.list[0].weather[0].icon}.png`;
+    const foreDesc1 = forecastInfo.list[0].weather[0].description;
+    const timestamp1 = forecastInfo.list[0].dt;
     const d1 = new Date(timestamp1 * 1000);
     const day1 = days[d1.getDay()];
     //console.log(day1);
@@ -76,7 +76,7 @@ function displayForecast(forecastInfo) {
     let d1p1 = document.createElement('p');
     let d1p2 = document.createElement('p');
 
-    d1p1.textContent = `${forecastInfo.list[4].main.temp.toFixed()}\u00B0F`;
+    d1p1.textContent = `${forecastInfo.list[0].main.temp.toFixed()}\u00B0F`;
     d1p2.textContent = day1;
 
     let d1img = document.createElement('img');
@@ -88,16 +88,16 @@ function displayForecast(forecastInfo) {
     first.appendChild(d1p1);
 
     //-----2 day-----
-    const foreIcon2 = `https://openweathermap.org/img/w/${forecastInfo.list[12].weather[0].icon}.png`;
-    const foreDesc2 = forecastInfo.list[12].weather[0].description;
-    const timestamp2 = forecastInfo.list[12].dt;
+    const foreIcon2 = `https://openweathermap.org/img/w/${forecastInfo.list[8].weather[0].icon}.png`;
+    const foreDesc2 = forecastInfo.list[8].weather[0].description;
+    const timestamp2 = forecastInfo.list[8].dt;
     const d2 = new Date(timestamp2 * 1000);
     const day2 = days[d2.getDay()];
 
     let d2p1 = document.createElement('p');
     let d2p2 = document.createElement('p');
 
-    d2p1.textContent = `${forecastInfo.list[12].main.temp.toFixed()}\u00B0F`;
+    d2p1.textContent = `${forecastInfo.list[8].main.temp.toFixed()}\u00B0F`;
     d2p2.textContent = day2;
 
     let d2img = document.createElement('img');
@@ -109,16 +109,16 @@ function displayForecast(forecastInfo) {
     second.appendChild(d2p1);
 
     //-----3 day-----
-    const foreIcon3 = `https://openweathermap.org/img/w/${forecastInfo.list[20].weather[0].icon}.png`;
-    const foreDesc3 = forecastInfo.list[20].weather[0].description;
-    const timestamp3 = forecastInfo.list[20].dt;
+    const foreIcon3 = `https://openweathermap.org/img/w/${forecastInfo.list[16].weather[0].icon}.png`;
+    const foreDesc3 = forecastInfo.list[16].weather[0].description;
+    const timestamp3 = forecastInfo.list[16].dt;
     const d3 = new Date(timestamp3 * 1000);
     const day3 = days[d3.getDay()];
 
     let d3p1 = document.createElement('p');
     let d3p2 = document.createElement('p');
 
-    d3p1.textContent = `${forecastInfo.list[20].main.temp.toFixed()}\u00B0F`;
+    d3p1.textContent = `${forecastInfo.list[16].main.temp.toFixed()}\u00B0F`;
     d3p2.textContent = day3;
 
     let d3img = document.createElement('img');
@@ -129,12 +129,3 @@ function displayForecast(forecastInfo) {
     third.appendChild(d3img);
     third.appendChild(d3p1);
 }
-
-//-----Last updated date & year for footer-----
-const lastDate = document.querySelector('#last-update');
-const year = document.querySelector('#current-year');
-
-const date = new Date().toLocaleDateString();
-lastDate.innerHTML = date;
-
-year.innerHTML = new Date().getFullYear();

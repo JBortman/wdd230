@@ -6,63 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bountiful Foods home page for Jordan Bortman at Brigham Young University - Idaho.">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
     <title>Home | Bountiful Foods</title>
 </head>
 <body>
     <header>
-        <img id="main-logo" src="images/main-logo.webp" alt="site logo">
+        <img id="main-logo" src="images/main-logo.webp" alt="site logo" loading="lazy">
         <h1>Bountiful Foods</h1>
             <div class="social-media">
                 <a href ="https://www.linkedin.com/"><img class="social-logo" src="images/linkedin.webp" alt="linkedin logo"></a>
                 <a href ="https://www.facebook.com/"><img class="social-logo" src="images/facebook.webp" alt="facebook logo"></a>
                 <a href ="https://www.instagram.com/"><img class="social-logo" src="images/instagram.webp" alt="instagram logo"></a>
             </div>
-    </header>
-    <nav>
-        <a href="fresh.html">Order</a>
-        <a href="about-us.html">About Us</a>
-    </nav>
-    <div id="summary">
-        <img id="sum-img" src="images/fruit.webp" alt="picture of berries">
-        <p>Summary text will go here!</p>
-    </div>
-    <div id="fresh-div">
-        <a href="fresh.html">
-        <h2>Order Now!</h2>
-        </a>
-    </div>
-    <div id="weather">
-        <h2>Weather</h2>
-        <section id="temp">
-            <figure>
-                <img src="#" alt="current condition" id="cond-icon">
-                <div id="temp-info"></div>
-                <figcaption></figcaption>
-            </figure>
-            <div id="humidity">Humidity</div>
-        </section>
-        <!-- <section id="condition">
-            <h2>Condition</h2>
-            <figure>
-                <img src="#" alt="current condition" id="cond-icon">
-                <figcaption>test</figcaption>
-            </figure>
-        </section> -->
-        <section id="forecast">
-            <h2 id="fore-title">3 Day Forecast</h2>
-            <div class="days" id="day1"></div>
-            <div class="days" id="day2"></div>
-            <div class="days" id="day3"></div>
-        </section>
-    </div>
+        </header>
+            <nav>
+                <a href="fresh.html">Order</a>
+                <a href="about-us.html">About Us</a>
+            </nav>
+    <main>
+        <div id="summary">
+            <p>Carlsbad, California. Home to LEGOLAND®, the Flower Fields of Carlsbad Ranch, and Bountiful Foods! This area of San Diego hosts beautiful beaches, lagoons, and many more amazing activities for the whole family. Come by and order some of our delicious food, or order a cutsom tasty fruit drink right here!</p>
+        </div>
+        <div id="fresh-div">
+            <a href="fresh.html">
+            <h2>Order Now!</h2>
+            </a>
+        </div>
+        <div id="weather">
+            <h2>Weather</h2>
+            <section id="temp">
+                <figure>
+                    <img src="#" alt="current condition" id="cond-icon">
+                    <div id="temp-info"></div>
+                    <figcaption></figcaption>
+                </figure>
+                <div id="humidity">Humidity</div>
+            </section>
+            <section id="forecast">
+                <h2 id="fore-title">3 Day Forecast</h2>
+                <div class="days" id="day1"></div>
+                <div class="days" id="day2"></div>
+                <div class="days" id="day3"></div>
+            </section>
+        </div>
+        <a id="contact" href="contact.html">Contact Us!</a>
+    </main>
     <footer>
-        <img id="foot-logo" src="images/main-logo.webp" alt="site logo">
+        <img id="foot-logo" src="images/main-logo.webp" alt="site logo" loading="lazy">
         <p>&copy; <span id="current-year"></span> | Bountiful Foods</p>
         <p>Last edited: <span id="last-update"></span></p>
         <p id="api">Weather Data Source: <a id="weather-link" href='https://openweathermap.org/'>OpenWeatherMap</a></p>
-        <a id="contact" href="contact.html">Contact Us!</a>
     </footer>
     <script src="scripts/index-scripts.js"></script>
+    <script src="scripts/main-scripts.js"></script>
 </body>
 </html>
