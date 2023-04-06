@@ -291,3 +291,25 @@ footer a {
     font-size: 0.9em;
     grid-row: 1/4;
 }
+
+/* ----------Fresh---------- */
+#fresh-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#fresh-main h1 {
+    grid-row: 1;
+    grid-column: 1/2;
+}
+
+#fresh-form {
+    grid-row: 2;
+    grid-column: 1/2;
+}
+
+button {
+    margin-bottom: 10px;
+}

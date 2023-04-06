@@ -25,8 +25,9 @@
                 <a href="fresh.html">Order</a>
                 <a href="about-us.html">About Us</a>
             </nav>
-    <main>
-        <form>
+    <main id="fresh-main">
+        <h1>Place your order below!</h1>
+        <form id="fresh-form">
             <label for="name">First Name: <small>(Required)</small></label><br>
             <input type="text" id="name" name="name" required> <br>
             <br>
@@ -52,6 +53,14 @@
             <select id="fruit3" name="fruit3">
             </select><br>
             <br>
+
+            <label for="special">Special Instructions:</label><br>
+            <textarea id="special" name="special" rows="5" placeholder="Insert any special instructions..."></textarea><br>
+            <br>
+            <div id="fresh-button">
+                <input id="order-button" type="button" onlick="getNutrition" value="Order Now"></input>
+            </div>
+            <div id="order-info"></div>
         </form>
     </main>
     <footer>
