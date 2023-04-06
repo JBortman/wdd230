@@ -317,12 +317,44 @@ footer p {
 div#order-info, div#nutrition {
     height: max-content;
     background-color: #FF7070;
-    
+    border-radius: 2em;
     grid-column: 2/3;
+}
+
+div#order-info p, div#nutrition p {
+    margin: 0;
+    padding: 10px;
 }
 
 #info {
     grid-row: 2;
+}
+
+#fresh-form input, select, textarea {
+    background-color: #a1ff9a;
+    border-radius: 0.5em;
+    width: 200px;
+
+}
+
+#fresh-form input:hover, select:hover, textarea:hover {
+    background-color: #9fffdf;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    font-size: 2em;
+    border-radius: 2em;
+    background-color: #023800;
+    padding: 10px;
+    color: #FFFFBC;
+}
+
+button:hover {
+    background-color: #9D0C0C;
 }
 
 /* ----------About page---------- */

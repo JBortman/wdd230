@@ -156,7 +156,7 @@ function displayHealth(){
   let p = document.createElement('p'); 
 
   h2.innerHTML = "Nutritional Info"
-  p.innerHTML = `Carbs: ${carbs.toFixed(2)}g<br>Protein: ${protein.toFixed(2)}g<br>Fat: ${fat.toFixed(2)}g<br>Sugar: ${sugar.toFixed(2)}g<br>Calories: ${calories.toFixed(2)}`;
+  p.innerHTML = `Carbs: ${carbs.toFixed(1)}g<br>Protein: ${protein.toFixed(1)}g<br>Fat: ${fat.toFixed(1)}g<br>Sugar: ${sugar.toFixed(1)}g<br>Calories: ${calories.toFixed()}`;
 
   nutrition.appendChild(h2);
   nutrition.appendChild(p);
@@ -167,7 +167,7 @@ button.addEventListener("click", function() {
     let p = document.createElement('p');        
 
     h2.innerHTML = "Order Summary"
-    p.innerHTML = `${firstName.value}<br>${email.value}<br>${phone.value}<br>${f1.value}<br>${f2.value}<br>${f3.value}<br>${special.value}<br>${curDate}`;
+    p.innerHTML = `${firstName.value}<br>${email.value}<br>${phone.value}<br>#1: ${f1.value}<br>#2: ${f2.value}<br>#3: ${f3.value}<br>${special.value}<br>${curDate}`;
 
     orderInfo.appendChild(h2)
     orderInfo.appendChild(p)

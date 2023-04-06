@@ -117,4 +117,8 @@
         grid-column: 3/4;
     }
 
+    #fresh-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
