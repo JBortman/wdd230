@@ -1,10 +1,12 @@
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
+let arr = "";
 
 async function getFruitData() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.log(data);
     makeList(data);
+    arr = Array.from(data);
+    //console.log(arr);
   };
 
   getFruitData();
@@ -42,10 +44,10 @@ const fruit3 = document.querySelector('#fruit3');
   const f3 = document.querySelector('#fruit3');
   const special = document.querySelector('#special');
   const orderInfo = document.querySelector('#order-info')
+  const nutrition = document.querySelector('#nutrition')
   const button = document.querySelector('#order-button');
   let curDate = new Date().toLocaleDateString();
   let prevNumber = Number(window.localStorage.getItem("number-of-orders"));
-
 
   let carbs = 0;
   let protein = 0;
@@ -53,6 +55,112 @@ const fruit3 = document.querySelector('#fruit3');
   let sugar = 0;
   let calories = 0;
 
+//-----Nutrition Info-----
+function getCarbs() {
+  carbs = 0;
+
+  arr.forEach(fruit => {
+    if (f1.value==fruit.name)
+    carbs += fruit.nutritions.carbohydrates;
+  });
+  
+  arr.forEach(fruit => {
+    if (f2.value==fruit.name)
+    carbs += fruit.nutritions.carbohydrates;
+  });
+
+  arr.forEach(fruit => {
+    if (f3.value==fruit.name)
+    carbs += fruit.nutritions.carbohydrates;
+});
+}
+
+function getProtein() {
+  protein = 0;
+
+  arr.forEach(fruit => {
+    if (f1.value==fruit.name)
+    protein += fruit.nutritions.protein;
+  });
+  
+  arr.forEach(fruit => {
+    if (f2.value==fruit.name)
+    protein += fruit.nutritions.protein;
+  });
+
+  arr.forEach(fruit => {
+    if (f3.value==fruit.name)
+    protein += fruit.nutritions.protein;
+});
+}
+
+function getFat() {
+  fat = 0;
+
+  arr.forEach(fruit => {
+    if (f1.value==fruit.name)
+    fat += fruit.nutritions.fat;
+  });
+  
+  arr.forEach(fruit => {
+    if (f2.value==fruit.name)
+    fat += fruit.nutritions.fat;
+  });
+
+  arr.forEach(fruit => {
+    if (f3.value==fruit.name)
+    fat += fruit.nutritions.fat;
+});
+}
+
+function getSugar() {
+  sugar = 0;
+
+  arr.forEach(fruit => {
+    if (f1.value==fruit.name)
+    sugar += fruit.nutritions.sugar;
+  });
+  
+  arr.forEach(fruit => {
+    if (f2.value==fruit.name)
+    sugar += fruit.nutritions.sugar;
+  });
+
+  arr.forEach(fruit => {
+    if (f3.value==fruit.name)
+    sugar += fruit.nutritions.sugar;
+});
+}
+
+function getCalories() {
+  calories = 0;
+
+  arr.forEach(fruit => {
+    if (f1.value==fruit.name)
+    calories += fruit.nutritions.calories;
+  });
+  
+  arr.forEach(fruit => {
+    if (f2.value==fruit.name)
+    calories += fruit.nutritions.calories;
+  });
+
+  arr.forEach(fruit => {
+    if (f3.value==fruit.name)
+    calories += fruit.nutritions.calories;
+});
+}
+
+function displayHealth(){
+  let h2 = document.createElement('h2');
+  let p = document.createElement('p'); 
+
+  h2.innerHTML = "Nutritional Info"
+  p.innerHTML = `Carbs: ${carbs.toFixed(2)}g<br>Protein: ${protein.toFixed(2)}g<br>Fat: ${fat.toFixed(2)}g<br>Sugar: ${sugar.toFixed(2)}g<br>Calories: ${calories.toFixed(2)}`;
+
+  nutrition.appendChild(h2);
+  nutrition.appendChild(p);
+}
 
 button.addEventListener("click", function() {
     let h2 = document.createElement('h2');
@@ -66,3 +174,10 @@ button.addEventListener("click", function() {
     let newNumber = prevNumber + 1;
     Number(window.localStorage.setItem("number-of-orders",newNumber))
 })
+
+button.addEventListener("click", getCarbs, false)
+button.addEventListener("click", getProtein, false)
+button.addEventListener("click", getFat, false)
+button.addEventListener("click", getSugar, false)
+button.addEventListener("click", getCalories, false)
+button.addEventListener("click", displayHealth, false)

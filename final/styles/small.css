@@ -314,6 +314,17 @@ footer p {
     margin-bottom: 10px;
 }
 
+div#order-info, div#nutrition {
+    height: max-content;
+    background-color: #FF7070;
+    
+    grid-column: 2/3;
+}
+
+#info {
+    grid-row: 2;
+}
+
 /* ----------About page---------- */
 #about-main {
     display: flex;
