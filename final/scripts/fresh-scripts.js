@@ -3,9 +3,8 @@ const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 async function getFruitData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data);
+    //console.log(data);
     makeList(data);
-    getNutrition(data);
   };
 
   getFruitData();
@@ -31,6 +30,8 @@ const fruit3 = document.querySelector('#fruit3');
     });
 
   };
+  //-----get
+
 
   //-----Display order info-----
   const firstName = document.querySelector('#name');
@@ -41,111 +42,23 @@ const fruit3 = document.querySelector('#fruit3');
   const f3 = document.querySelector('#fruit3');
   const special = document.querySelector('#special');
   const orderInfo = document.querySelector('#order-info')
-  const button = document.querySelector('#fresh-button');
+  const button = document.querySelector('#order-button');
+  let curDate = new Date().toLocaleDateString();
+  
   let carbs = 0;
   let protein = 0;
   let fat = 0;
   let sugar = 0;
   let calories = 0;
 
+
 button.addEventListener("click", function() {
     let h2 = document.createElement('h2');
     let p = document.createElement('p');        
 
     h2.innerHTML = "Order Summary"
-    p.innerHTML = `${firstName.value}<br>${email.value}<br>${phone.value}<br>${f1.value}<br>${f2.value}<br>${f3.value}<br>${special.value}`;
+    p.innerHTML = `${firstName.value}<br>${email.value}<br>${phone.value}<br>${f1.value}<br>${f2.value}<br>${f3.value}<br>${special.value}<br>${curDate}`;
 
     orderInfo.appendChild(h2)
-    orderInfo.appendChild(p)
+    orderInfo.appendChild(p)    
 })
-
-//-----Nutrition Data-----
-function getNutrition(data) {
-
-//-----Carbs-----
-data.forEach(fruit => {
-  if(f1.value == fruit.name)
-    carbs += fruit.nutritions.carbohydrates;
-});
-
-data.forEach(fruit => {
-  if(f2.value == fruit.name)
-    carbs += fruit.nutritions.carbohydrates;
-});
-
-data.forEach(fruit => {
-  if(f3.value == fruit.name)
-    carbs += fruit.nutritions.carbohydrates;
-    console.log(carbs);
-});
-
-//-----Protein-----
-data.forEach(fruit => {
-  if(f1.value == fruit.name)
-    protein += fruit.nutritions.protein;
-});
-
-data.forEach(fruit => {
-  if(f2.value == fruit.name)
-  protein += fruit.nutritions.protein;
-});
-
-data.forEach(fruit => {
-  if(f3.value == fruit.name)
-  protein += fruit.nutritions.protein;
-    console.log(protein);
-});
-
-//-----Fat-----
-data.forEach(fruit => {
-  if(f1.value == fruit.name)
-    fat += fruit.nutritions.fat;
-});
-
-data.forEach(fruit => {
-  if(f2.value == fruit.name)
-  fat += fruit.nutritions.fat;
-});
-
-data.forEach(fruit => {
-  if(f3.value == fruit.name)
-  fat += fruit.nutritions.fat;
-    console.log(fat);
-});
-
-//-----Sugar-----
-data.forEach(fruit => {
-  if(f1.value == fruit.name)
-    sugar += fruit.nutritions.sugar;
-});
-
-data.forEach(fruit => {
-  if(f2.value == fruit.name)
-  sugar += fruit.nutritions.sugar;
-});
-
-data.forEach(fruit => {
-  if(f3.value == fruit.name)
-  sugar += fruit.nutritions.sugar;
-    console.log(sugar);
-});
-
-//-----Calories-----
-data.forEach(fruit => {
-  if(f1.value == fruit.name)
-    calories += fruit.nutritions.calories;
-});
-
-data.forEach(fruit => {
-  if(f2.value == fruit.name)
-  calories += fruit.nutritions.calories;
-});
-
-data.forEach(fruit => {
-  if(f3.value == fruit.name)
-  calories += fruit.nutritions.calories;
-    console.log(calories);
-});
-
-}
-  

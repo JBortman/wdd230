@@ -260,6 +260,7 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 10px;
 }
 
 footer p {
@@ -310,6 +311,36 @@ footer a {
     grid-column: 1/2;
 }
 
-button {
+#order-button {
     margin-bottom: 10px;
+}
+
+/* ----------About page---------- */
+#about-main {
+    display: flex;
+    flex-direction: column;
+}
+
+#about-main p {
+    text-align: center;
+}
+
+#about-img {
+    height: 300px;
+    width: 300px;
+}
+
+#map {
+    border: 1px solid #000000;
+    background-color: #9D0C0C;
+    color: #FFFFBC;
+}
+
+#map p {
+    margin: 0;
+}
+
+iframe {
+    width: 200px;
+    height: 200px;
 }
